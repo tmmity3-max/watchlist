@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
+import GoogleAuthButton from '@/components/GoogleAuthButton';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -88,6 +89,10 @@ export default function LoginPage() {
             >
               Send magic link
             </button>
+
+            <div className="mt-3">
+              <GoogleAuthButton label="Continue with Google" />
+            </div>
           </>
         )}
 

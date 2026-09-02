@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
+import GoogleAuthButton from '@/components/GoogleAuthButton';
 
 export default function SignupPage() {
   const supabase = createClient();
@@ -66,6 +67,15 @@ export default function SignupPage() {
               {loading ? 'Creating…' : 'Create account'}
             </button>
           </form>
+        )}
+
+        {!done && (
+          <>
+            <div className="my-4 flex items-center gap-2 text-xs text-base-muted">
+              <div className="h-px flex-1 bg-base-border" /> or <div className="h-px flex-1 bg-base-border" />
+            </div>
+            <GoogleAuthButton label="Sign up with Google" />
+          </>
         )}
 
         <p className="mt-6 text-center text-sm text-base-muted">
