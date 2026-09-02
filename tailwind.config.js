@@ -22,6 +22,8 @@ module.exports = {
           green: '#3ecf7e',
         },
         accent: '#4f8cff',
+        'accent-light': '#78a9ff',
+        'accent-strong': '#3d7ff0',
       },
     },
   },
