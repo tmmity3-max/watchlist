@@ -1,8 +1,13 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'TM Watchlist',
-  description: 'Companion dashboard for the TM Watchlist Chrome extension',
+  title: 'TM Watchlist — Smart Trading Watchlists',
+  description: 'Sync your trading watchlists across devices with TM Watchlist.',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
 };
 
 export default function RootLayout({ children }) {
